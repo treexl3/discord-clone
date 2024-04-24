@@ -8,8 +8,7 @@ import {
 } from "@/components/ui/dialog";
 
 import { useModal } from "@/hooks/use-modal-store";
-
-
+import { Label } from "@/components/ui/label";
 
 export const InviteModal = () => {
     const { isOpen, onClose, type } = useModal();
@@ -25,7 +24,7 @@ export const InviteModal = () => {
                     </DialogTitle>
                 </DialogHeader>
                 <div className="p-6">
-                    
+                    <Label>Server Invite Link</Label>
                 </div>
             </DialogContent>
         </Dialog>
